@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 17px 135px;
+  margin: 0 auto;
+  position: relative;
+
+  &-wide {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  &-medium {
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+  }
+
+  &-small {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+  }
+
+  @import "variables-breakpoints";
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 16px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 16px;
+  }
+}

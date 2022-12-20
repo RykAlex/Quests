@@ -1,0 +1,218 @@
+@font-face {
+<<<<<<< HEAD
+  font-family: Inter;
+  src: url(/src/assets/static/font/Inter-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url(/src/assets/static/font/Inter-Bold.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url(/src/assets/static/font/Inter-Medium.woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url(/src/assets/static/font/Inter-Italic.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url(/src/assets/static/font/Inter-MediumItalic.woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url(/src/assets/static/font/BalsamiqSans-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url(/src/assets/static/font/BalsamiqSans-Bold.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/src/assets/static/font/Roboto-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@import "variables-breakpoints";
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+h1 {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 122%;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+h3 {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 122%;
+}
+
+h4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+h5 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 122%;
+}
+
+h6 {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.subtitle {
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.caption {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 138%;
+}
+
+@media screen and (max-width: $tablet) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  h5 {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 150%;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 170%;
+  }
+
+  .caption {
+    font-size: 11px;
+    line-height: 120%;
+  }
+
+  .btn-text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+}
+=======
+	font-family: "";
+	src: url(/src/assets/static/font/);
+	font-weight: 500;
+	font-display: swap;
+}
+
+h1,
+.h1,
+%h1 {
+	@media screen and (max-width: $mobile) {}
+}
+
+h2,
+.h2,
+%h2 {
+	@media screen and (max-width: $mobile) {}
+}
+
+h3,
+.h3,
+%h3 {
+	@media screen and (max-width: $mobile) {}
+}
+
+h4,
+.h4,
+%h4 {
+	@media screen and (max-width: $mobile) {}
+}
+
+h5,
+.h5,
+%h5 {
+	@media screen and (max-width: $mobile) {}
+}
+
+h6,
+.h6,
+%h6 {
+	@media screen and (max-width: $mobile) {}
+}
+
+.subtitle,
+%subtitle {
+	@media screen and (max-width: $mobile) {}
+}
+
+body,
+input {
+	@media screen and (max-width: $mobile) {}
+}
+
+a {}
+>>>>>>> 7b8c8f68095f5915cb3a9e2cb994bcc65afc8cd3

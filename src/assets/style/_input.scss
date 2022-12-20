@@ -1,0 +1,75 @@
+.custom-input {
+	display: flex;
+	width: 100%;
+	gap: 8px;
+	$parent: &;
+
+	&__label {
+		order: 1;
+	}
+
+	&__helper {
+		order: 3;
+		@include transition-base;
+	}
+
+	%base {
+		order: 2;
+		outline: none;
+		@include transition-base;
+		-moz-appearance: initial;
+		-webkit-appearance: initial;
+
+		&:disabled {
+			~ #{$parent}__helper {}
+
+			~ #{$parent}__label {}
+		}
+
+		&:not(:disabled) {
+			&:hover {}
+
+			&:focus {}
+		}
+	}
+
+	select {
+		@extend %base;
+	}
+
+	input {
+		@extend %base;
+
+		&::placeholder {}
+
+		&:not(:disabled) {
+			&:not(:focus):not(:hover):not(:placeholder-shown) {
+				&:valid {
+					~ #{$parent}__helper {}
+
+					~ #{$parent}__label {}
+				}
+
+				&:invalid {
+					~ #{$parent}__helper {}
+
+					~ #{$parent}__label {}
+				}
+			}
+		}
+	}
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	appearance: textfield;
+
+	&::-webkit-inner-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+}

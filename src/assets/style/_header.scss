@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+header {
+  background: $ground-header;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 15px;
+}
+.logo-text {
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 50%;
+  color: $white;
+}
+.header-phone {
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 40px;
+}
+
+@import "variables-breakpoints";
+
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
+}
+=======
+header {}
+>>>>>>> 7b8c8f68095f5915cb3a9e2cb994bcc65afc8cd3

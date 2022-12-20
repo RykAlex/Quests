@@ -1,0 +1,28 @@
+.tabs {
+	&__control {
+		input {
+			visibility: hidden;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		&__visual {
+			cursor: pointer;
+			user-select: none;
+		}
+	}
+
+	&__content {
+		$parent: &;
+
+		input {
+			visibility: hidden;
+			position: absolute;
+			pointer-events: none;
+
+			&:not(:checked) ~ #{$parent}__visual {
+				display: none;
+			}
+		}
+	}
+}

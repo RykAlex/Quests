@@ -1,0 +1,68 @@
+{
+	"name": "project-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node ./node_modules/gulp/bin/gulp.js --ram --fwatch",
+		"build": "node ./node_modules/gulp/bin/gulp.js",
+		"build_min": "node ./node_modules/gulp/bin/gulp.js --min",
+		"build_watch": "node ./node_modules/gulp/bin/gulp.js --fwatch",
+		"build_watch_min": "node ./node_modules/gulp/bin/gulp.js --fwatch --min",
+		"imagemin": "node ./node_modules/gulp/bin/gulp.js imagemin",
+		"ttfToWoff": "node ./node_modules/gulp/bin/gulp.js ttfToWoff",
+		"init": "npm i && node ./node_modules/gulp/bin/gulp.js init",
+		"check packages update": "node ./node_modules/npm-check-updates/build/src/bin/cli.js",
+		"update packages unsafe": "node ./node_modules/npm-check-updates/build/src/bin/cli.js -u && npm i"
+	},
+	"devDependencies": {
+<<<<<<< HEAD
+		"browser-sync": "^2.11.2",
+=======
+		"browser-sync": "^2.27.10",
+>>>>>>> 7b8c8f68095f5915cb3a9e2cb994bcc65afc8cd3
+		"browserify": "^17.0.0",
+		"esmify": "^2.1.1",
+		"globby": "^13.1.3",
+		"gulp": "^4.0.2",
+<<<<<<< HEAD
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-cached": "^1.1.1",
+		"gulp-clean": "^0.4.0",
+		"gulp-csso": "^4.0.1",
+		"gulp-flatmap": "^1.0.2",
+=======
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-hb": "^8.0.0",
+>>>>>>> 7b8c8f68095f5915cb3a9e2cb994bcc65afc8cd3
+		"gulp-imagemin": "^8.0.0",
+		"gulp-include": "^2.4.1",
+		"gulp-mem": "^0.1.3-2",
+		"gulp-newer": "^1.4.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-replace": "^1.1.4",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-uglify": "^3.0.2",
+		"imagemin-pngquant": "^9.0.2",
+		"imagemin-webp": "^7.0.0",
+		"npm-check-updates": "^16.6.0",
+		"path": "^0.12.7",
+		"sass": "^1.57.0",
+		"tsify": "^5.0.4",
+		"ttf2woff2": "^5.0.0",
+		"typescript": "^4.9.4",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-paths": "^5.0.0",
+		"vinyl-source-stream": "^2.0.0",
+		"yargs": "^17.6.2"
+	},
+	"dependencies": {
+		"@splidejs/splide": "^4.1.4",
+		"@types/node": "^18.11.17",
+		"cleave.js": "^1.6.0",
+		"fslightbox": "^3.3.1",
+		"tippy.js": "^6.3.7"
+	}
+}

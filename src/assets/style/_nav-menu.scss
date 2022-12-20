@@ -1,0 +1,77 @@
+section.nav {
+  background: $ground-menu;
+  padding: 3px;
+}
+nav.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  margin-right: 35px;
+}
+li.menu-item {
+  font-family: "Inter", sans-serif;
+  margin-right: 35px;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.menu-item {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 20px;
+    left: 0;
+    background: $ground-button-gradient;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    transition: all color 0.3s ease;
+    &::before {
+      cursor: pointer;
+      width: 100%;
+      height: 2px;
+    }
+  }
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search-text {
+  color: $white;
+  margin-right: 8px;
+}
+.search-icon {
+  width: 16px;
+  height: 16px;
+  background: $icon-yellow;
+  -webkit-mask-image: url(/src/assets/static/img/search.svg);
+  mask-image: url(/src/assets/static/img/search.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+@import "variables-breakpoints";
+
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
+}

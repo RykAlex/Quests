@@ -1,0 +1,53 @@
+// body {
+
+// }
+html {
+  scroll-padding-top: 100px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.icon {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+  cursor: default;
+  color: $white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@import "variables-breakpoints";
+
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
+}

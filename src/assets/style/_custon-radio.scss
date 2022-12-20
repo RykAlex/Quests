@@ -1,0 +1,63 @@
+.custom-radio {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	--size: 24px;
+	--border-width: 2px;
+	--check-size: 14px;
+
+	input[type="radio"] {
+		width: var(--size);
+		height: var(--size);
+		visibility: hidden;
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		appearance: none;
+		user-select: none;
+
+		&::before {
+			visibility: visible;
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-width: var(--border-width);
+			border-style: solid;
+			// border-color: ;
+			// background: ;
+			border-radius: 50%;
+			@include transition-base;
+		}
+
+		&::after {
+			visibility: visible;
+			position: absolute;
+			content: "";
+			border-radius: 50%;
+			@include transition-base;
+			border-width: calc(var(--check-size) / 2);
+			border-style: solid;
+			// border-color: ;
+			opacity: 0;
+		}
+
+		&:hover {
+			&::before {
+				// border-color: ;
+			}
+		}
+
+		&:checked {
+			&::before {
+				// border-color: ;
+			}
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}

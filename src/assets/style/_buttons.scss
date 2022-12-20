@@ -1,0 +1,38 @@
+.header-button {
+  background: $ground-button-grey;
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.main-btn {
+  padding: 20px 50px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.main-btn--red {
+  background: $ground-button-gradient;
+}
+.main-btn--black {
+  background: $ground-button-grey;
+}
+
+@media screen and (max-width: $tablet) {
+}

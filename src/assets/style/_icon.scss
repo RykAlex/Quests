@@ -1,0 +1,16 @@
+@import "icons";
+
+.icon,
+%icon {
+	display: inline-flex;
+	border: none;
+	user-select: none;
+	mask-size: cover;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	flex-shrink: 0;
+	@include transition-base;
+	width: var(--size, 24px);
+	height: var(--size, 24px);
+	background-color: var(--color, #000);
+}

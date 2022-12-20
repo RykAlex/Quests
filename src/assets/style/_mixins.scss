@@ -1,0 +1,47 @@
+@mixin transition-base($property: all, $duration: .3s) {
+	transition: $property var(--transition-duration,var(--transition-duration, #{$duration}) ) ease;
+}
+
+@mixin text-line-clip($lines) {
+	display: -webkit-box;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+@function proportion($width, $height) {
+	@return math.div($height, $width) * 100%;
+}
+
+@mixin absolute-container($width, $height) {
+	width: 100%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	mask-image: radial-gradient(#000, #000);
+
+	@supports (aspect-ratio : 1 / 1) {
+		aspect-ratio: calc($width / $height);
+	}
+
+	@supports not (aspect-ratio : 1 / 1) {
+		height: 0;
+		padding-bottom: proportion($width : $width, $height : $height);
+
+		> :first-child {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	> :first-child {
+		border-radius: inherit;
+		mask-image: inherit;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}

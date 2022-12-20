@@ -1,0 +1,57 @@
+section.main {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.main h1 {
+  position: absolute;
+  font-family: "BalsamiqSans", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 65px;
+  top: 215px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  color: $white;
+  white-space: nowrap;
+}
+.main-btns {
+  position: absolute;
+  top: 375px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.main-btn.main-btn--red {
+  margin-right: 20px;
+}
+.main-icon-down {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: $white;
+  mask-image: url(/src/assets/static/img/ArrowDown.svg);
+  -webkit-mask-image: url(/src/assets/static/img/ArrowDown.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  mask-size: contain;
+  -wekit-mask-size: contain;
+  &:hover {
+    cursor: pointer;
+  }
+}
+@import "variables-breakpoints";
+
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
+}
